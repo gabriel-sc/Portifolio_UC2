@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 100;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 300;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 400;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 700;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 800;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 900;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
+}
+
+body{
+    background-image: url("../img/fundo.jpg");
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-weight: 400;
+}
+
+#logo img{
+    width: 15%;
+    margin: 1.5625rem 0 0 2.8125rem;
+}
+
+#loginpage{
+    background-color: rgba(0,0,0,.75);
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 90vw;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1.5625rem;
+    gap: 1.25rem;
+    margin-top: 1.25rem
+}
+
+#loginpage h1{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#loginpage input#login,#senha{
+    height: 3.125rem;
+    background-color: #333;
+    border-radius: 0.25rem;
+    font-size: 1.05rem;
+    padding: 0.6rem;
+}
+
+#loginpage button#entrar{
+    height: 3.125rem;
+    color: white;
+    background-color: #e50914;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border-radius: 0.25rem;
+    margin-top: 1.25rem;
+    cursor: pointer;
+}
+#loginpage label, a{
+    color: #b3b3b3;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1rem;
+    text-decoration: none;
+    width: 9.375rem;
+}
+
+#lembrar{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+#loginpage h2{ 
+    color: #737373;
+    font-size: 1rem;
+    margin-top: 3.125rem;
+}
+#loginpage h2 a{ 
+    color: white;
+    font-size: 1rem;
+}
+#loginpage p{
+    font-size: 0.85rem;
+    color: #8c8c8c;
+}
+#loginpage p a{
+    color: #0071eb;
+}
+
+footer{
+    font-size: 0.875rem;
+    color: #737373;
+    background-color: rgba(0,0,0,.75);
+    margin-top: 6.25rem;
+    text-align: left;
+    padding: 1.9rem 12.5rem 0px 12.5rem;
+    justify-content: center;
+    line-height: 1.5625rem;
+}
+
+footer li{
+    list-style-type: none;
+}
+
+footer a{
+    color: #737373;
+}
+
+.numero{
+    font-size: 1.125rem;
+}
+
+footer p{
+    font-size: 1.125rem;
+    margin-bottom: 1.5625rem;
+}
+
+ul{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 20%;
+    margin: 0 30px 0 0;
+}
+
+#language2{
+    width: 9.375rem;
+    height: 3.125rem;
+    color: #999;
+    background-color: rgba(0,0,0,.4);
+    border: 0.5px solid #333;
+    font-weight: 400;
+    font-size: 1.05rem;
+    border-radius: 0.19rem;
+    margin-top: 3.125rem;
+    margin-bottom: 2rem;
+}
+
+#language2 option{
+    background-color: black;
+}
+
+@media (max-width: 868px){
+    #logo img{
+        width: 20%;
+    }
+    #loginpage{
+        width: 55vw;
+    }
+    #language2{
+        margin-right: 0px;
+    }
+    footer{
+        padding: 1.9rem 6rem 0px 6rem;
+    }
+    ul{
+        margin: 0 50px 0 0;
+    }
+}
+
+@media (max-width: 582px){
+    #logo img{
+        width: 30%;
+    }
+    #loginpage{
+        width: 75vw;
+    }
+    footer{
+        padding: 1.9rem 3rem 0px 3rem;
+    }
+}
+
+@media (max-width: 450px){
+    #logo img{
+        width: 35%;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        gap: 20px;
+    }
+}
+@media (max-width: 375px){
+    #logo img{
+        width: 45%;
+    }
+    #loginpage{
+        width: 80vw;
+    }
+}
+@media (max-width: 320px){
+    #loginpage{
+        width: 90vw;
+    }
+}

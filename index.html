@@ -102,6 +102,14 @@ function <span class="hljs-keyword" style="color: rgb(203, 120, 50);">addEffectW
         </section>
         <section id="projetos">
             <h1>Meus Projetos</h1>
+            <div id="netflix" allowfullscreen>
+                <h1>Projeto Clone Site Netflix</h1>
+                <iframe src="./Netflix/index.html" frameborder="0" style="background-color: #fff;" height="100%" width="100%"></iframe>
+                <div class="botoes">
+                    <button class="botao-tela-cheia">VER PROJETO EM TELA CHEIA</button>
+                    <a href="https://github.com/gabriel-sc/Portifolio_UC2" target="_blank"><button>IR PARA O REPOSITORIO</button></a>
+                </div>
+            </div>
             <a href="https://github.com/gabriel-sc" target="_blank"><button class="mais">VER MAIS</button></a>
         </section>
     </main>
@@ -125,6 +133,23 @@ function <span class="hljs-keyword" style="color: rgb(203, 120, 50);">addEffectW
             </ul>
         </div>
     </footer>
+    <script>
+        let menuButton = document.querySelector("#menu");
+        let menu = document.querySelector(".menu");
+        
+        menuButton.addEventListener("click", function () {
+            menu.classList.toggle("open");
+        });
+        
+        const botoesTelaCheia = document.querySelectorAll('.botao-tela-cheia');
+        const iframes = document.querySelectorAll('iframe');
+        
+        botoesTelaCheia.forEach((botao, index) => {
+          botao.addEventListener('click', () => {
+            iframes[index].requestFullscreen();
+          });
+        });
+        </script>
     <script src="./script.js"></script>
 </body>
 
