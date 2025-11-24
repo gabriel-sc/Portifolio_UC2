@@ -80,3 +80,19 @@ function configurarMenuHamburguer() {
         });
     }
 }
+fetch("api/filmes.php")
+  .then(r => r.json())
+  .then(filmes => {
+      const container = document.querySelector("#lista-filmes");
+
+      filmes.forEach(f => {
+          container.innerHTML += `
+              <div class="card">
+                  <img src="${f.imagem}" class="poster">
+                  <h3>${f.titulo}</h3>
+                  <p>${f.descricao}</p>
+                  <span class="cat">${f.categoria}</span>
+              </div>
+          `;
+      });
+  });
