@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@dracula/css/dracula.min.css">
+    <title>Portifolio - Gabriel Schio </title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>
+                <xmp></Gabriel Schio></xmp>
+            </h1>
+            <a href="#" id="menu"><img src="./img/menu.png" alt="Menu"></a>
+            <ul class="menu">
+                <li><a href="#informacao">Sobre Mim</a></li>
+                <li><a href="#minhas-habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Meus Projetos</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="informacao">
+            <div id="sobre">
+                <h1>Gabriel Schio</h1>
+                <h2>FullStack Developer</h2>
+                <h3>FullStack developer em busca de projetos, freelancer e vaga de emprego, em constante aprendizado e
+                    buscando sempre melhorar.</h3>
+            </div>
+            <div id="codigo">
+                <span><pre class="hljs" style="display: block; overflow-x: auto; color: rgb(186, 186, 186);">let <span class="hljs-keyword" style="color: rgb(203, 120, 50);">button_menu </span>= document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+let float_menu = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_menu--float"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                        
+let line_top = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button_line--top"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+let line_under = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button_line--bottom"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                        
+<span class="hljs-keyword" style="color: rgb(203, 120, 50);">button_menu.isSelected </span>= false<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                        
+function <span class="hljs-keyword" style="color: rgb(203, 120, 50);">addEffectWriting(element, </span>time) {
+    let element_array = element.innerText.split(<span class="hljs-string" style="color: rgb(224, 196, 108);">""</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+
+    element.count = <span class="hljs-number" style="color: rgb(104, 150, 186);">0</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+    element.innerText = <span class="hljs-string" style="color: rgb(224, 196, 108);">""</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+
+    function writeSymbols() {
+        element.innerText += element_array[element.count]<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+        element.count++<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+
+        if (element.count &lt;= element_array.length) {
+            setTimeout(() =&gt; {
+                writeSymbols()<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+            }, time)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+        } else if (element.count &gt;= element_array.length) {
+            element.count = <span class="hljs-number" style="color: rgb(104, 150, 186);">0</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+            element.innerText = <span class="hljs-string" style="color: rgb(224, 196, 108);">""</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+
+            writeSymbols()<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+        }
+    }
+    writeSymbols()<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+}</pre></span>
+            </div>
+        </section>
+
+        <section id="historia">
+            <img src="./img/Logo.png" alt="Retangulo">
+            <h1>Há anos venho tendo sempre muito interrese em estudar tecnologia e me aprofundar mais no assunto, então iniciei o curso Jovem Programador
+                para começar a me aprofundar nessa área, e agora que dei meu primeiro passo pretendo construir meu Portfolio e me aprofundar ainda mais nessa área.
+            </h1>
+        </section>
+        <section id="minhas-habilidades">
+            <h1 class="titulo">Minhas Habilidades</h1>
+            <div id="habilidades">
+                <div class="card">
+                    <img src="./img/icon html.png" alt="HTML5" class="normal">
+                    <img src="./img/icon html -- hover.png" alt="HTML5" class="hover">
+                    <h1>HTML5</h1>
+                </div>
+                <div class="card">
+                    <img src="./img/icon css.png" alt="CSS3" class="normal">
+                    <img src="./img/icon css - hover.png" alt="CSS" class="hover">
+                    <h1>CSS3</h1>
+                </div>
+                <div class="card">
+                    <img src="./img/icon js.png" alt="JAVASCRIPT" class="normal">
+                    <img src="./img/icon js -- hover.png" alt="JAVASCRIPT" class="hover">
+                    <h1>JavaScript</h1>
+                </div>
+                <div class="card">
+                    <img src="./img/icon git.png" alt="GIT" class="normal">
+                    <img src="./img/icon git -- hover.png" alt="GIT" class="hover">
+                    <h1>Git</h1>
+                </div>
+            </div>
+        </section>
+        <section id="projetos">
+            <h1>Meus Projetos</h1>
+            <a href="https://github.com/gabriel-sc" target="_blank"><button class="mais">VER MAIS</button></a>
+        </section>
+    </main>
+    <footer>
+        <div id="msg">
+            <h1><xmp></Gabriel Schio></xmp></h1>
+            <h2>Se você gostou do meu trabalho <br> e precisa de mim, estou <br> pronto para conversar com você.</h2>
+        </div>
+        <div id="contatos">
+            <h1>Contatos</h1>
+            <ul>
+                <li><img src="./img/gmail.png" alt="gmail"> <a href="gabriel.schio.haugg@gmail.com"
+                        target="_blank">gabriel.schio.haugg@gmail.com</a></li>
+                <li><img src="./img/instagram.png" alt="instagram"><a href="https://www.instagram.com/gabeeschio/"
+                        target="_blank"></a></li>
+                <li><img src="./img/github.png" alt="github"> <a href="https://github.com/gabriel-sc"
+                        target="_blank">Gabriel Schio</a></li>
+                <li><img src="./img/linkedin.png" alt="linkedin"><a
+                        href="https://www.linkedin.com/in/gabriel-haugg"_blank>Gabriel 
+                       Schio</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
